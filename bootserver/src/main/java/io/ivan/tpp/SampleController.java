@@ -3,21 +3,26 @@ package io.ivan.tpp;
 import io.ivan.tpp.business.mycat.entity.Hotel;
 import io.ivan.tpp.business.mycat.service.OrderService;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.stereotype.Controller;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 
-@Controller
 //@EnableAutoConfiguration
 //@SpringBootApplication(exclude={DataSourceAutoConfiguration.class,HibernateJpaAutoConfiguration.class})
 @MapperScan("io.ivan.tpp.business.*.dao")
+@Configuration
+@ComponentScan
+@RestController
+@EnableEurekaClient
 @SpringBootApplication
 public class SampleController {
 	
@@ -34,20 +39,25 @@ public class SampleController {
     	
     	List<Hotel> hotels = null;
     	Hotel e = null;
-    	for(int i = 0; i < 1000; i++){
-    		hotels = new ArrayList<Hotel>(5000);
-    		for(int j = 0; j < 5000; j++){
-    			e = new Hotel();
-    			e.setAddress("setAddress");
-    			e.setCity(123L);
-    			e.setName("setName");
-    			e.setZip("setZip");
-    			hotels.add(e);
-    		}
-    		orderService.addHotel(hotels);
-    	}
+//    	for(int i = 0; i < 1000; i++){
+//    		hotels = new ArrayList<Hotel>(5000);
+//    		for(int j = 0; j < 5000; j++){
+//    			e = new Hotel();
+//    			e.setAddress("setAddress");
+//    			e.setCity(123L);
+//    			e.setName("setName");
+//    			e.setZip("setZip");
+//    			hotels.add(e);
+//    		}
+//    		orderService.addHotel(hotels);
+//    	}
     	
         return "Hello World!";
+    }
+    
+    @RequestMapping("/greeting")
+    public String greeting() {
+        return "Hello from EurekaClient!";
     }
     
     public static void main(String[] args) throws Exception {

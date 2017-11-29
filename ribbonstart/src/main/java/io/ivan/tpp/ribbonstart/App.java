@@ -1,4 +1,4 @@
-package io.ivan.tpp.consuming;
+package io.ivan.tpp.ribbonstart;
 
 /**
  * Hello world!
