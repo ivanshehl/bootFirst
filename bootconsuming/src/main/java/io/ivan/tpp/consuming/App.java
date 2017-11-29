@@ -1,4 +1,4 @@
-package io.ivan.tpp;
+package io.ivan.tpp.consuming;
 
 /**
  * Hello world!
