@@ -1,4 +1,4 @@
-package io.ivan.tpp.myboot.business.start.entity;
+package io.ivan.tpp.myboot.business.mycat.entity;
 
 /**
  * Created by fanlychie on 2017/6/25.
@@ -12,6 +12,8 @@ public class Order {
     private String productName;
 
     private Double totalFee;
+    
+    public Order() {}
 
     public Order(String no, Integer uid, String productName, Double totalFee) {
         this.no = no;
