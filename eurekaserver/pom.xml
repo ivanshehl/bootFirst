@@ -5,11 +5,10 @@
 	<parent>
 		<groupId>io.ivan.tpp</groupId>
 		<artifactId>bootFirst</artifactId>
-		<version>1.0-SNAPSHOT</version>
+		<version>1.0.0</version>
 	</parent>
-	<groupId>io.ivan.tpp.eureka</groupId>
 	<artifactId>eurekaserver</artifactId>
-	<version>1.0-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<name>eurekaserver</name>
 	<url>http://maven.apache.org</url>
 	<dependencies>

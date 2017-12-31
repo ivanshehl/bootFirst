@@ -6,11 +6,9 @@
 	<parent>
 		<groupId>io.ivan.tpp</groupId>
 		<artifactId>bootFirst</artifactId>
-		<version>1.0-SNAPSHOT</version>
+		<version>1.0.0</version>
 	</parent>
-	<groupId>io.ivan.tpp.ribbons</groupId>
 	<artifactId>ribbonstart</artifactId>
-	<version>1.0-SNAPSHOT</version>
 	<name>ribbonstart</name>
 	<url>http://maven.apache.org</url>
 	<dependencies>
@@ -39,9 +37,9 @@
         </dependency>
         
         <dependency>
-			<groupId>io.ivan.tpp.myboot</groupId>
+			<groupId>io.ivan.tpp</groupId>
 			<artifactId>bootserver</artifactId>
-			<version>1.0-SNAPSHOT</version>
+			<version>1.0.0</version>
 		</dependency>
 	</dependencies>
 </project>
