@@ -9,7 +9,6 @@
 		<version>1.0.0</version>
 	</parent>
 	<artifactId>bootserver</artifactId>
-	<version>1.0.0</version>
 	<name>bootserver</name>
 	<url>http://maven.apache.org</url>
 	<dependencies>

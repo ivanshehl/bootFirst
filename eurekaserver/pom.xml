@@ -8,7 +8,6 @@
 		<version>1.0.0</version>
 	</parent>
 	<artifactId>eurekaserver</artifactId>
-	<version>1.0.0</version>
 	<name>eurekaserver</name>
 	<url>http://maven.apache.org</url>
 	<dependencies>
