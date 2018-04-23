@@ -10,6 +10,7 @@
 	
 	<properties>
 		<java.version>1.7</java.version>
+		<guava.version>19.0</guava.version>
 	</properties>
 
 	<parent>
@@ -46,6 +47,8 @@
 		<module>eurekaserver</module>
 		<module>ribbonstart</module>
 <!--     <module>spring-learn</module> -->
+    <module>component</module>
+    <module>ehcacheServer</module>
   </modules>
 
 	<build>
